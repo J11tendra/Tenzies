@@ -5,4 +5,4 @@ Tenzies is a simple and engaging dice game. The game is easy to learn. Roll the 
 
 ## Mockup
 
-![Tenzies](/public/tenzies.png)
+![Tenzies](./public/tenzies.png)
