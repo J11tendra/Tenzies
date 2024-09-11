@@ -20,6 +20,13 @@ main {
   height: 40rem;
   gap: 4rem;
   max-width: 800px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .head {

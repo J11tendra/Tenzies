@@ -93,22 +93,24 @@ export default function App() {
   });
 
   return (
-    <main>
-      {tenzies && (
-        <Confetti
-          height={windowDimension.height}
-          width={windowDimension.width}
-        />
-      )}
-      <div className="head">
-        <h1>Tenzies</h1>
-        <h2>
-          Roll until all dice are the same. Click each die to freeze it at its
-          current value between rolls.
-        </h2>
-      </div>
-      <div className="die-container">{dieElements}</div>
-      <button onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
-    </main>
+    <div className="container">
+      <main>
+        {tenzies && (
+          <Confetti
+            height={windowDimension.height}
+            width={windowDimension.width}
+          />
+        )}
+        <div className="head">
+          <h1>Tenzies</h1>
+          <h2>
+            Roll until all dice are the same. Click each die to freeze it at its
+            current value between rolls.
+          </h2>
+        </div>
+        <div className="die-container">{dieElements}</div>
+        <button onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
+      </main>
+    </div>
   );
 }
